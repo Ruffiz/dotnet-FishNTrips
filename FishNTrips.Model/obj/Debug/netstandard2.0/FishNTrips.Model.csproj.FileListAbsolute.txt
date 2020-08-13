@@ -1,0 +1,16 @@
+D:\Dokumenter\Studie\dotNET\FishNTrips\FishNTrips.Model\bin\Debug\netstandard2.0\FishNTrips.Model.deps.json
+D:\Dokumenter\Studie\dotNET\FishNTrips\FishNTrips.Model\bin\Debug\netstandard2.0\FishNTrips.Model.dll
+D:\Dokumenter\Studie\dotNET\FishNTrips\FishNTrips.Model\obj\Debug\netstandard2.0\FishNTrips.Model.csproj.CoreCompileInputs.cache
+D:\Dokumenter\Studie\dotNET\FishNTrips\FishNTrips.Model\obj\Debug\netstandard2.0\FishNTrips.Model.AssemblyInfoInputs.cache
+D:\Dokumenter\Studie\dotNET\FishNTrips\FishNTrips.Model\obj\Debug\netstandard2.0\FishNTrips.Model.AssemblyInfo.cs
+D:\Dokumenter\Studie\dotNET\FishNTrips\FishNTrips.Model\bin\Debug\netstandard2.0\FishNTrips.Model.pdb
+D:\Dokumenter\Studie\dotNET\FishNTrips\FishNTrips.Model\obj\Debug\netstandard2.0\FishNTrips.Model.dll
+D:\Dokumenter\Studie\dotNET\FishNTrips\FishNTrips.Model\obj\Debug\netstandard2.0\FishNTrips.Model.pdb
+D:\Dokumenter\Studie\dotNET\FishNTrips\FishNTrips.Model\obj\Debug\netstandard2.0\FishNTrips.Model.csprojAssemblyReference.cache
+D:\Dokumenter\Studier\dotNET\FishNTrips\FishNTrips.Model\bin\Debug\netstandard2.0\FishNTrips.Model.deps.json
+D:\Dokumenter\Studier\dotNET\FishNTrips\FishNTrips.Model\bin\Debug\netstandard2.0\FishNTrips.Model.dll
+D:\Dokumenter\Studier\dotNET\FishNTrips\FishNTrips.Model\bin\Debug\netstandard2.0\FishNTrips.Model.pdb
+D:\Dokumenter\Studier\dotNET\FishNTrips\FishNTrips.Model\obj\Debug\netstandard2.0\FishNTrips.Model.AssemblyInfoInputs.cache
+D:\Dokumenter\Studier\dotNET\FishNTrips\FishNTrips.Model\obj\Debug\netstandard2.0\FishNTrips.Model.AssemblyInfo.cs
+D:\Dokumenter\Studier\dotNET\FishNTrips\FishNTrips.Model\obj\Debug\netstandard2.0\FishNTrips.Model.dll
+D:\Dokumenter\Studier\dotNET\FishNTrips\FishNTrips.Model\obj\Debug\netstandard2.0\FishNTrips.Model.pdb

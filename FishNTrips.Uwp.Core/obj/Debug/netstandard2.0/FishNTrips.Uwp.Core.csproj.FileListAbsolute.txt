@@ -1,0 +1,17 @@
+D:\Dokumenter\Studie\dotNET\FishNTrips\FishNTrips.Uwp.Core\obj\Debug\netstandard2.0\FishNTrips.Uwp.Core.csproj.CoreCompileInputs.cache
+D:\Dokumenter\Studie\dotNET\FishNTrips\FishNTrips.Uwp.Core\obj\Debug\netstandard2.0\FishNTrips.Uwp.Core.AssemblyInfoInputs.cache
+D:\Dokumenter\Studie\dotNET\FishNTrips\FishNTrips.Uwp.Core\obj\Debug\netstandard2.0\FishNTrips.Uwp.Core.AssemblyInfo.cs
+D:\Dokumenter\Studie\dotNET\FishNTrips\FishNTrips.Uwp.Core\bin\Debug\netstandard2.0\FishNTrips.Uwp.Core.deps.json
+D:\Dokumenter\Studie\dotNET\FishNTrips\FishNTrips.Uwp.Core\bin\Debug\netstandard2.0\FishNTrips.Uwp.Core.dll
+D:\Dokumenter\Studie\dotNET\FishNTrips\FishNTrips.Uwp.Core\bin\Debug\netstandard2.0\FishNTrips.Uwp.Core.pdb
+D:\Dokumenter\Studie\dotNET\FishNTrips\FishNTrips.Uwp.Core\obj\Debug\netstandard2.0\FishNTrips.Uwp.Core.csprojAssemblyReference.cache
+D:\Dokumenter\Studie\dotNET\FishNTrips\FishNTrips.Uwp.Core\obj\Debug\netstandard2.0\FishNTrips.Uwp.Core.dll
+D:\Dokumenter\Studie\dotNET\FishNTrips\FishNTrips.Uwp.Core\obj\Debug\netstandard2.0\FishNTrips.Uwp.Core.pdb
+D:\Dokumenter\Studier\dotNET\FishNTrips\FishNTrips.Uwp.Core\bin\Debug\netstandard2.0\FishNTrips.Uwp.Core.deps.json
+D:\Dokumenter\Studier\dotNET\FishNTrips\FishNTrips.Uwp.Core\bin\Debug\netstandard2.0\FishNTrips.Uwp.Core.dll
+D:\Dokumenter\Studier\dotNET\FishNTrips\FishNTrips.Uwp.Core\bin\Debug\netstandard2.0\FishNTrips.Uwp.Core.pdb
+D:\Dokumenter\Studier\dotNET\FishNTrips\FishNTrips.Uwp.Core\obj\Debug\netstandard2.0\FishNTrips.Uwp.Core.csprojAssemblyReference.cache
+D:\Dokumenter\Studier\dotNET\FishNTrips\FishNTrips.Uwp.Core\obj\Debug\netstandard2.0\FishNTrips.Uwp.Core.AssemblyInfoInputs.cache
+D:\Dokumenter\Studier\dotNET\FishNTrips\FishNTrips.Uwp.Core\obj\Debug\netstandard2.0\FishNTrips.Uwp.Core.AssemblyInfo.cs
+D:\Dokumenter\Studier\dotNET\FishNTrips\FishNTrips.Uwp.Core\obj\Debug\netstandard2.0\FishNTrips.Uwp.Core.dll
+D:\Dokumenter\Studier\dotNET\FishNTrips\FishNTrips.Uwp.Core\obj\Debug\netstandard2.0\FishNTrips.Uwp.Core.pdb

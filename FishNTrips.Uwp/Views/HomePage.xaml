@@ -1,0 +1,126 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Custom="using:Windows.UI.Xaml.Controls.Maps"
+    xmlns:model="using:FishNTrips.Model"
+    x:Class="FishNTrips.Uwp.Views.HomePage"
+    Style="{StaticResource PageStyle}"
+    mc:Ignorable="d">
+
+    <Grid 
+        x:Name="ContentArea"
+        Margin="{StaticResource SmallLeftRightMargin}">
+        <Pivot
+            x:Name="Items">
+            <Pivot.HeaderTemplate>
+                <DataTemplate>
+                    <TextBlock
+                        Text="{Binding}"
+                        Style="{ThemeResource SubtitleTextBlockStyle}" />
+                </DataTemplate>
+            </Pivot.HeaderTemplate>
+            <PivotItem Header="My Fish'n Trips" FontFamily="Segoe UI">
+                <Grid Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}" HorizontalAlignment="Stretch" Margin="10,0,-10,0" VerticalAlignment="Stretch" >
+
+                    <Image x:Name="mainBack" Source="/assets/fishwater_1.jpg" Stretch="Fill" HorizontalAlignment="Left" Margin="0,0,0,0" Width="1220" Height="720" VerticalAlignment="Top"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="493,10,0,0" Text="FishNTrips" FontFamily="Goudy old style" FontSize="58" FontStyle="Italic" TextWrapping="Wrap" VerticalAlignment="Top" Width="249" Foreground="White" Height="70"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="519,122,0,0" Text="{x:Bind ViewModel.WelcomeText}" TextWrapping="Wrap" VerticalAlignment="Top" Height="47" Width="175" FontSize="18"/>
+                    <!--The SystemControlPageBackgroundChromeLowBrush background represents where you should place your content. 
+                Place your content here.-->
+
+                </Grid>
+            </PivotItem>
+
+            <PivotItem Header="Location">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="433*"/>
+                        <ColumnDefinition Width="799*"/>
+                    </Grid.ColumnDefinitions>
+                    <Custom:MapControl Name="MyMap" Margin="36,0,0,0" VerticalAlignment="Center" Height="596"
+                    Style="Terrain"                          
+                    ZoomInteractionMode="GestureAndControl"  
+                    TiltInteractionMode="GestureAndControl"    
+                    MapServiceToken="K0Y2RD0a32qaOemdeZ4b~wSHYYDqU7DxpWufHzF-laA~AnF9M59JHwfWeGCrVCWkojwoY6jMrmouAhYTfYSo5B4LdYOnjIoeDY_qIo6dp4Li" HorizontalAlignment="Left" Width="389"/>
+                    <TextBox Margin="73.857,140,0,0" FontSize="25" Text="{x:Bind ViewModel.locationName, Mode=TwoWay}" PlaceholderText="Location" Grid.Column="1" Height="50" VerticalAlignment="Top" HorizontalAlignment="Left" Width="276"/>
+                    <Button Content="Add Location" Click="{x:Bind ViewModel.AddLocation}" HorizontalAlignment="Left" Margin="150.857,219,0,0" VerticalAlignment="Top" Grid.Column="1" Height="33" Width="123"/>
+                    <ListView x:Name="lvLocations" ItemsSource="{x:Bind ViewModel.Locations, Mode=OneWay}" IsItemClickEnabled="True" Margin="443.857,38,0,0" Grid.Column="1" HorizontalAlignment="Left" Width="317" Height="596" VerticalAlignment="Top">
+                        <ListView.ItemTemplate>
+                            <DataTemplate x:DataType="model:Location">
+                                <StackPanel Orientation="Vertical">
+                                    <TextBlock Text="{x:Bind LocationName}" FontSize="15" />
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </Grid>
+            </PivotItem>
+
+            <PivotItem Header="Species">
+                <Grid Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}">
+                    <Image x:Name="trout" Source="/assets/trout_1.png" HorizontalAlignment="Left" Height="100" Margin="20,10,0,0" VerticalAlignment="Top" Width="100"/>
+                    <Image x:Name="abbor" Source="/assets/abbor_1.png" HorizontalAlignment="Left" Height="100" Margin="20,120,0,0" VerticalAlignment="Top" Width="100"/>
+                    <Image x:Name="gjedde" Source="/assets/gjedde_1.png" HorizontalAlignment="Left" Height="100" Margin="20,230,0,0" VerticalAlignment="Top" Width="100"/>
+                    <Image x:Name="sorv" Source="/assets/sørv_1.png" HorizontalAlignment="Left" Height="100" Margin="20,340,0,0" VerticalAlignment="Top" Width="100"/>
+                    <Image x:Name="roye" Source="/assets/laks_1.png" HorizontalAlignment="Left" Height="100" Margin="20,450,0,0" VerticalAlignment="Top" Width="100"/>
+                    <Image x:Name="eel" Source="/assets/eel_1.png" HorizontalAlignment="Left" Height="100" Margin="20,560,0,0" VerticalAlignment="Top" Width="100"/>
+                    <TextBlock x:Name="textTrout" HorizontalAlignment="Left" Margin="160,50,0,0" Text="" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Segoe UI">
+                        <Hyperlink NavigateUri="https://snl.no/%C3%B8rret">Ørret</Hyperlink>
+                    </TextBlock>
+                    <TextBlock x:Name="textAbbor" HorizontalAlignment="Left" Margin="160,160,0,0" Text="" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top">
+                        <Hyperlink NavigateUri="https://snl.no/abbor">Abbor</Hyperlink>
+                    </TextBlock>
+                    <TextBlock x:Name="textGjedde" HorizontalAlignment="Left" Margin="160,270,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top">
+                        <Hyperlink NavigateUri="https://snl.no/gjedde">Gjedde</Hyperlink>
+                    </TextBlock>
+                    <TextBlock x:Name="textSorv" HorizontalAlignment="Left" Margin="160,380,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top">
+                        <Hyperlink NavigateUri="https://no.wikipedia.org/wiki/S%C3%B8rv">Sørv</Hyperlink>
+                    </TextBlock>
+                    <TextBlock x:Name="textRoye" HorizontalAlignment="Left" Margin="160,490,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top">
+                        <Hyperlink NavigateUri="https://snl.no/laks">Laks</Hyperlink>
+                    </TextBlock>
+                    <TextBlock x:Name="textEel" HorizontalAlignment="Left" Margin="160,600,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top">
+                        <Hyperlink NavigateUri="https://snl.no/%C3%A5l">Ål</Hyperlink>
+                    </TextBlock>
+
+
+                    <!--
+                    The SystemControlPageBackgroundChromeLowBrush background represents where you should place your content. 
+                    Place your content here.
+                    -->
+
+                </Grid>
+            </PivotItem>
+
+            <PivotItem Header="Profile">
+                <Grid Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}">
+                    <TextBox Text="{x:Bind ViewModel.newPassword, Mode=TwoWay}" HorizontalAlignment="Left" Margin="59,283,0,0" VerticalAlignment="Top" Width="162"/>
+                    <Button Content="Delete your user" Click="{x:Bind ViewModel.DeleteUser}" HorizontalAlignment="Left" Margin="389,303,0,0" Width="156" VerticalAlignment="Top"/>
+                    <Button Content="Change your password" Click="{x:Bind ViewModel.UpdatePassword}" HorizontalAlignment="Left" Margin="59,336,0,0" VerticalAlignment="Top" Height="35"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="59,195,0,0" Text="Change your password here" FontSize="20" TextAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Height="62" Width="163"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="269,208,0,0" Text="OR" FontSize="30" TextWrapping="Wrap" VerticalAlignment="Top"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="389,201,0,0" Text="Delete your user here" FontSize="20" TextAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Height="53" Width="132"/>
+
+
+                    <!--
+                    The SystemControlPageBackgroundChromeLowBrush background represents where you should place your content. 
+                    Place your content here.
+                    -->
+
+                </Grid>
+            </PivotItem>
+
+            <PivotItem Header="Help">
+                <Grid Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}">
+                    <!--
+                    The SystemControlPageBackgroundChromeLowBrush background represents where you should place your content. 
+                    Place your content here.
+                    -->
+
+                </Grid>
+            </PivotItem>
+        </Pivot>
+    </Grid>
+</Page>

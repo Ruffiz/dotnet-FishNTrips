@@ -1,0 +1,1 @@
+D:\Dokumenter\Studier\dotNET\FishNTrips\FishNTrips.Uwp\FishNTrips.Uwp.csproj;x86
